@@ -1,0 +1,167 @@
+.ModalContainer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    transform: translate(-200px, 200px);
+}
+
+.createForm {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+legend {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.informationsContainer,
+.adressContainer,
+.departmentContainer {
+    min-width: 270px;
+    width: 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.informationsContainer__firstName,
+.informationsContainer__lastName,
+.informationsContainer__select {
+    margin-bottom: 20px;
+}
+
+.informationsContainer__select .select {
+    background-color: rgb(125, 128, 125);
+    width: 100%;
+
+}
+
+
+.informationsContainer__select div {
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.adressContainer {
+    border: 4px solid #6c8312;
+    border-radius: 1rem;
+    margin-left: 5px;
+}
+
+.btnContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.btnContainer button {
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem 2rem;
+    -webkit-box-shadow: 0rem 0.2rem 0.5rem 0.1rem #d5d5d5;
+    box-shadow: 0rem 0.2rem 0.5rem 0.1rem #d5d5d5;
+    /* background: #9356dc; */
+    background: -o-linear-gradient(100deg, #012611 25%, #6c8312 100%);
+    background: linear-gradient(-10deg, #012611 25%, #6c8312 100%);
+}
+
+button:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 964px) {
+    input {
+        width: 300px;
+    }
+
+}
+
+@media screen and (min-width:465px) and (width < 864px) {
+    input {
+        width: 240px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .createForm {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .btnContainer {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 514px) {
+
+    .informationsContainer,
+    .adressContainer,
+    .departmentContainer {
+        min-width: 60%;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .informationsContainer__select {
+        width: 53%;
+
+    }
+}
+
+
+@media screen and (min-width: 885px) and (width < 1100px) {
+    .informationsContainer__select {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 700px) and (width < 885px) {
+    .informationsContainer__select {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .informationsContainer__select {
+        width: 100%;
+    }
+}

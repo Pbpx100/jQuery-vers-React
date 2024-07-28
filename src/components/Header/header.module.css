@@ -1,0 +1,142 @@
+.container__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-color: #6c8312;
+
+}
+
+
+.header {
+    color: var(--primary-color);
+}
+
+.container__header.smallHeader {
+    width: 55%;
+}
+
+.header__logo {
+    width: 110px;
+    height: 105px;
+
+}
+
+.header__logo.smallHeader {
+    width: 105px;
+    height: 34px;
+}
+
+.header__nav__ul--li.smallHeader {
+    list-style: none;
+
+}
+
+.link {
+    text-decoration: none;
+    outline: none;
+    color: var(--primary-color);
+}
+
+.navLink_active {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+.header__nav__ul {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.header__nav__ul--li {
+    padding: 15px;
+    font-style: normal;
+    list-style: none;
+    font-weight: 500;
+    line-height: 34.22px;
+    color: var(--primary-color);
+
+}
+
+.header__nav__ul--li:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+
+@media screen and (min-width: 996px) {
+    .container__header {
+        padding: 50px;
+    }
+
+    .header__nav__ul--li {
+        font-size: 1.5rem;
+
+    }
+
+    .title_logo {
+        font-size: 3rem;
+
+
+    }
+
+
+}
+
+@media screen and (min-width:778px) and (width < 996px) {
+    .container__header {
+        padding: 5px;
+    }
+
+    .header__nav__ul--li {
+        font-size: 0.8rem;
+    }
+
+    .title_logo {
+        font-size: 1.1rem;
+        top: 0;
+        left: 90px;
+    }
+
+
+}
+
+@media screen and (width < 778px) {
+    .container__header {
+        padding: 3px;
+    }
+
+    .header__nav__ul--li {
+        font-size: 0.75rem;
+        line-height: 17.11px;
+    }
+
+    .title_logo {
+        font-size: 0.9rem;
+        left: 85px;
+    }
+
+}
+
+@media screen and (width < 578px) {
+    .header__logo {
+        display: none;
+    }
+
+    .title_logo {
+        font-size: 0.8rem;
+        top: 0;
+        left: 10px;
+    }
+
+}

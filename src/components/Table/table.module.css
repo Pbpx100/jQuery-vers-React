@@ -1,0 +1,65 @@
+.containerFilter {
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.containerShow {
+    display: flex;
+    margin-top: 2px;
+}
+
+.pShow {
+    margin: 3px;
+    margin-top: 10px;
+}
+
+tbody td {
+    border-spacing: 0;
+}
+
+table {
+    border-spacing: 0;
+    width: 100%;
+}
+
+table tr {
+    border: 0;
+}
+
+table thead th {
+    background-color: #dcf2cc;
+}
+
+table tr td {
+    border-left: 0;
+}
+
+table tr:nth-child(odd) {
+    background-color: #f8f4f4;
+}
+
+
+table tr:hover {
+    background: green;
+}
+
+.containerGoTo {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 699px) {
+    .containerFilter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .showing {
+        margin-top: 10px;
+    }
+}
